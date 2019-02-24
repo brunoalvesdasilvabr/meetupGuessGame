@@ -13,7 +13,7 @@ function generate(){
           foto =   Math.floor(Math.random() *26) + 1; 
           var fotoDOM = document.querySelector('.foto');
           fotoDOM.src = 'foto-' + foto + '.jpg';
-          fotoDOM.style.animation ="appearPerson 1s";
+          
            }
 
            generate();
@@ -23,10 +23,7 @@ function generate(){
            
            function verify()
            {
-            yesMeetup;
-            notMeetup;
-            score;
-            scoreVal;
+            
           
                 if(yesButton){
                       
@@ -53,10 +50,7 @@ function generate(){
 
               document.querySelector('#no').addEventListener('click', VerifyNo); 
                 function VerifyNo(){
-                  yesMeetup;
-                  notMeetup;
-                  score;
-                  scoreVal;
+                
                   if (notButton){
                           
                           if(notMeetup.includes(foto)){
