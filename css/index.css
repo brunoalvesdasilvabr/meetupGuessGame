@@ -24,33 +24,8 @@
     animation-duration: 1s;
     animation-direction: forwards;
   }
-  #errou{
-    display: none;
-    transform: scale(0);
-    animation-name:anim;
-    animation-duration: 1s;
-    animation-direction: forwards;
-  }
-#decisao{
-  animation-name:anim;
-  animation-duration: 1s;
-}
 
-  @keyframes anim{
-    0%{
-      transform: scale(0);
-    
-    }
-    40%{
-      transform: scale(1.0);
-      
-    }
-    100%{
-     transform: scale(0);
-     display: none;
-      
-    }
-  }
+
     header h1{
         margin-top: 1rem;
         display: inline-block;
@@ -95,6 +70,7 @@
     }
 
     button{
+      outline: none;
         padding: 1rem;
         border:none;
         background-color:lightblue;
@@ -108,14 +84,7 @@
       
       transition:all .3s;
     }
- #gerar{
-   position: relative;
-   margin-top:1rem;
-   border-right:1px solid #283593;
-   padding-right: 4rem;
-    font-size:1rem;
-    padding-left: 4rem;
- }
+
     button:hover{
       box-shadow: 4px 8px 46px black;
     }
