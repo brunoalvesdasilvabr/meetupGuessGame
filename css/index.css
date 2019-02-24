@@ -73,6 +73,19 @@
             color: black;
         }
     }
+    @keyframes changeWrongColor{
+
+      0%{
+          
+      }
+      50%{
+          color:red;
+      }
+
+      100%{
+          color: black;
+      }
+  }
 
     span{
       font-size: 1.6rem;

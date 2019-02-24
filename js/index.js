@@ -13,9 +13,7 @@ function generate(){
           foto =   Math.floor(Math.random() *26) + 1; 
           var fotoDOM = document.querySelector('.foto');
           fotoDOM.src = 'foto-' + foto + '.jpg';
-          console.log(foto);
           fotoDOM.style.animation ="appearPerson 1s";
-          decisao.style.animationIterationCount = "2";
            }
 
            generate();
@@ -33,20 +31,20 @@ function generate(){
                 if(yesButton){
                       
                       if(yesMeetup.includes(foto) ){
-                        
-                      decisao.textContent = "You got it";
-                      decisao.style.display ="block";
-                      decisao.style.animation ="anim 1s";
-                      decisao.style.animationIterationCount = "2";
                       scoreVal++;
-                          generate();
+                      decisao.textContent = ' ';
+                       generate();
                     }else{
                     
-                    decisao.textContent = "wrong";
-                    decisao.style.animation ="anim 1s";
-                    decisao.style.display ="block";
-                    decisao.style.animationIterationCount = "2";
+                   
                       scoreVal = 0;
+                      decisao.textContent = 'Wrong';
+                      decisao.style.color = 'red';
+                      decisao.style.color = 'red';
+                       decisao.style.animationName = "changeWrongColor";
+                       decisao.style.animationDuration = ".5s";
+                       decisao.style.animationIterationCount = "infinite";
+                      
                       generate();
                   }
                 }
@@ -63,20 +61,20 @@ function generate(){
                           
                           if(notMeetup.includes(foto)){
                           
-                        decisao.textContent = "You got it";
-                        decisao.style.display ="block";
-                        decisao.style.animation ="anim 1s";
-                        decisao.style.animationIterationCount = "1";
+                      
                         scoreVal++;
+                        decisao.textContent = ' ';
                         generate();
 
                         }else{
                           
-                          decisao.textContent = "Wrong";
-                          decisao.style.display ="block";
-                          decisao.style.animation ="anim 1s";
-                          decisao.style.animationIterationCount = "1";
+                          
                          scoreVal = 0;
+                         decisao.textContent = 'Wrong';
+                         decisao.style.color = 'red';
+                         decisao.style.animationName = "changeWrongColor";
+                          decisao.style.animationDuration = ".5s";
+                          decisao.style.animationIterationCount = "infinite";
                          generate();
                         }
 
