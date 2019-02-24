@@ -124,7 +124,7 @@
   .pessoa{
     box-shadow: 9px 13px 61px black;
     display:inline-block;
-    background-image: url(http://www.alagoas24horas.com.br/wp-content/uploads/2018/04/OgoleirojaponsMasaakiHigashiguchidoGambaOsaka.jpg);
+    background-color:black;
     background-size:cover;
     background-position:center;
     width: 30rem;
@@ -155,7 +155,7 @@
     
   }
   
-  @media screen and (max-width: 400px) {
+  @media  (max-width: 400px) {
     .pessoa{
      width:22rem;
       height: 40%;
