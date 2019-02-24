@@ -83,4 +83,4 @@ function generate(){
                       score.textContent = scoreVal;  
                }
            
-              
+          
